@@ -64,7 +64,7 @@ class Person:    #создаем родительский класс для бо
             Thing.health for Thing in self.things)
         return updated_health
 
-    def health_left(self, damage)
+    def health_left(self, damage): # я так и не понял как создать функцию для здоровья
         self.damage = damage
         health_left = self.updated_health - self.attack_damage
         return health_left
@@ -117,7 +117,7 @@ for i in range(1, n+1):
     Fighter = random.choice(Classes_list)
     Fighters_list.append(Fighter)
 
-# Пошел сам бой:
+# Пошел сам бой, в котором я не смог реализовать накопление повреждений, поэтому программе не работает
 while len(Fighters_list) > 1:
     defender = random.choice(Fighters_list)
     attaker = random.choice(Fighters_list)
